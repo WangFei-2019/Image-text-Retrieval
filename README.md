@@ -7,6 +7,9 @@ This repo contians the codes for our SIGIR 2022 paper "[Where Does the Performan
 
 We change all sub-project code to fit torch1.8.0 and CUDA11 and add random seed for them.  
 
+# Statement
+In the research, we found that the image-text retrieval community need a unified project for a funture research. We will publish a version after June 2022. This project is temporary without detail.
+ 
 # License
 The license is CC-BY-NC 4.0.
 
