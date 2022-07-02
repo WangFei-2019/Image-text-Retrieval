@@ -18,9 +18,9 @@ The license is CC-BY-NC 4.0.
 Please cite as:
 
 ```bibtex
-@inproceedings{ding2021rejuvenating,
+@inproceedings{ding2022Reproducibility,
     title = {Where Does the Performance Improvement Come From - A Reproducibility Concern about Image-Text Retrieval},
-    author = {Jun Rao, Fei Wang, Liang Ding, Shuhan Qi, Yibing Zhan, Weifeng Liu, Dacheng Tao}
+    author = {Jun Rao and Fei Wang and Liang Ding and Shuhan Qi and Yibing Zhan and Weifeng Liu and Dacheng Tao},
     booktitle = {SIGIR},
     year = {2022}
 }
