@@ -31,6 +31,7 @@ This article aims to provide the information retrieval community with some refle
 To be more specific, we first examine the related reproducibility concerns and explain why our focus is on image-text retrieval tasks. Second, we systematically summarize the current paradigm of image-text retrieval models and the stated contributions of those approaches. Third, we analyze various aspects of the reproduction of pretrained and nonpretrained retrieval models. To complete this, we conducted ablation experiments and obtained some influencing factors that affect retrieval recall more than the improvement claimed in the original paper. Finally, we present some reflections and challenges that the retrieval community should consider in the future. Our source code is publicly available at https://github.com/WangFei-2019/Image-text-Retrieval.
 
 ![model](./fig/framework.png)
+<center><b><font size='2'>Fig: A Unified Framework OF image-text retrieval</font></b></center></font>
 
 # Code
 We change all sub-project code to fit torch1.7 and CUDA11 and add random seed for all methods. You can use it from [code](https://github.com/WangFei-2019/Image-text-Retrieval).
