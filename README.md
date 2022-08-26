@@ -180,7 +180,7 @@ evaluation.evalrank_ensemble(model_path=MODEL_PATH_1, model_path2=MODEL_PATH_2, 
 In the research, we found that the image-text retrieval community need a unified project for a funture research. We publish a beta vision for Image-Test retrieval research. Every researcher is welcome to test the code, we will accept your valuable comments and reply in the issue area.
 
 # Vision
-bate-0.1
+bate-v0.1
 
 # License
 The license is CC-BY-NC 4.0.
