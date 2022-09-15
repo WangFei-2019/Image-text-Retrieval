@@ -92,30 +92,30 @@ python train.py with VSE_PP data_path="$DATA_PATH" data_name="$DATA_NAME" max_vi
 #### t-i LSE 
 ```bash
 # For MSCOCO
-python train.py with SCAN data_path="$DATA_PATH" data_name=coco_precomp max_violation=True max_violation=True bi_gru=True agg_func=LogSumExp cross_attn=t2i lambda_lse=6 lambda_softmax=9
+python train.py with SCAN data_path="$DATA_PATH" data_name=coco_precomp max_violation=True bi_gru=True agg_func=LogSumExp cross_attn=t2i lambda_lse=6 lambda_softmax=9
 #For Flickr30K
-python train.py with SCAN data_path="$DATA_PATH" data_name=f30k_precomp max_violation=True max_violation=True bi_gru=True agg_func=LogSumExp cross_attn=t2i lambda_lse=6 lambda_softmax=9
+python train.py with SCAN data_path="$DATA_PATH" data_name=f30k_precomp max_violation=True bi_gru=True agg_func=LogSumExp cross_attn=t2i lambda_lse=6 lambda_softmax=9
 ```
 #### t-i AVG 
 ```bash
 # For MSCOCO
-python train.py with SCAN data_path="$DATA_PATH" data_name=coco_precomp max_violation=True max_violation=True bi_gru=True agg_func=Mean cross_attn=t2i lambda_lse=6 lambda_softmax=9
+python train.py with SCAN data_path="$DATA_PATH" data_name=coco_precomp max_violation=True bi_gru=True agg_func=Mean cross_attn=t2i lambda_lse=6 lambda_softmax=9
 # For Flickr30K
-python train.py with SCAN data_path="$DATA_PATH" data_name=f30k_precomp max_violation=True max_violation=True bi_gru=True agg_func=Mean cross_attn=t2i lambda_lse=6 lambda_softmax=9
+python train.py with SCAN data_path="$DATA_PATH" data_name=f30k_precomp max_violation=True bi_gru=True agg_func=Mean cross_attn=t2i lambda_lse=6 lambda_softmax=9
 ```
 #### i-t LSE 
 ```bash
 # For MSCOCO
-python train.py with SCAN data_path="$DATA_PATH" data_name=coco_precomp max_violation=True max_violation=True bi_gru=True agg_func=LogSumExp cross_attn=i2t lambda_lse=20 lambda_softmax=4
+python train.py with SCAN data_path="$DATA_PATH" data_name=coco_precomp max_violation=True bi_gru=True agg_func=LogSumExp cross_attn=i2t lambda_lse=20 lambda_softmax=4
 # For Flickr30K
-python train.py with SCAN data_path="$DATA_PATH" data_name=coco_precomp max_violation=True max_violation=True bi_gru=True agg_func=LogSumExp cross_attn=i2t lambda_lse=5 lambda_softmax=4
+python train.py with SCAN data_path="$DATA_PATH" data_name=f30k_precomp max_violation=True bi_gru=True agg_func=LogSumExp cross_attn=i2t lambda_lse=5 lambda_softmax=4
 ```
 #### i-t AVG 
 ```bash
 # For MSCOCO
-python train.py with SCAN data_path="$DATA_PATH" data_name=coco_precomp max_violation=True max_violation=True bi_gru=True agg_func=Mean cross_attn=i2t lambda_lse=6 lambda_softmax=4
+python train.py with SCAN data_path="$DATA_PATH" data_name=coco_precomp max_violation=True bi_gru=True agg_func=Mean cross_attn=i2t lambda_lse=6 lambda_softmax=4
 # For Flickr30K
-python train.py with SCAN data_path="$DATA_PATH" data_name=f30k_precomp max_violation=True max_violation=True bi_gru=True agg_func=Mean cross_attn=i2t lambda_lse=6 lambda_softmax=4
+python train.py with SCAN data_path="$DATA_PATH" data_name=f30k_precomp max_violation=True bi_gru=True agg_func=Mean cross_attn=i2t lambda_lse=6 lambda_softmax=4
 ```
 
 ### VSRN
@@ -152,7 +152,7 @@ python train.py with SGRAF data_path="$DATA_PATH" data_name=f30k_precomp module_
 # For MSCOCO
 python train.py with CAMERA data_path="$DATA_PATH" data_name=coco_precomp bert_path="$BERT_PATH" max_violation=True num_epochs=40 lr_update=20
 # For Flickr30K
-python train.py with CAMERA data_path="$DATA_PATH" data_name=coco_precomp bert_path="$BERT_PATH" max_violation=True num_epochs=30 lr_update=10
+python train.py with CAMERA data_path="$DATA_PATH" data_name=f30k_precomp bert_path="$BERT_PATH" max_violation=True num_epochs=30 lr_update=10
 ```
 
 ## Test 
