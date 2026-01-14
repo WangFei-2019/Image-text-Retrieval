@@ -281,7 +281,7 @@ def evalrank_single(model_path, data_path=None, split='dev', fold5=False):
 	data_loader, _ = data.get_test_loader(split, _config['data_name'], _config['batch_size'], _config['workers'],
 										  _config)
 	print('Computing results...')
-	islength = True if _config['name'] in ['SGRAF'] else False
+	islength = True if _config['name'] in ['SGRAF', 'CAMERA'] else False
 	imgs_embs, caps_embs, cap_lens = encode_data(model, data_loader, islength=islength)
 	print('#Images: %d, #Captions: %d' % (imgs_embs.shape[0] / 5, caps_embs.shape[0]))
 
@@ -366,7 +366,7 @@ def evalrank_ensemble(model_path, model_path2, data_path=None, split='dev', fold
 										  _config)
 
 	print('Computing results...')
-	islength = True if _config['name'] in ['SGRAF'] else False
+	islength = True if _config['name'] in ['SGRAF', 'CAMERA'] else False
 	imgs_embs, caps_embs, cap_lens = encode_data(model, data_loader, islength=islength)
 	imgs_embs_2, caps_embs_2, cap_lens_2 = encode_data(model_2, data_loader, islength=islength)
 
@@ -433,3 +433,4 @@ def evalrank_ensemble(model_path, model_path2, data_path=None, split='dev', fold
 	save_dir = '/'.join(model_path.split('/')[:-1])
 	with open(os.path.join(save_dir, f'{res_dic["data_name"]}_ensemble_result.yaml'), 'w') as yaml_file:
 		yaml.dump(res_dic, yaml_file)
+
